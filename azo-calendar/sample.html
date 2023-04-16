@@ -91,41 +91,83 @@
       width: 800px;
       height: 800px;
       background: url('https://raw.githubusercontent.com/achernar-alpha-eridani/public_assets/main/azo-calendar/marks_sprites.png') -10px -10px;
+      transform: scale(.5);
     }
 
     .bg-mark2 {
       width: 800px;
       height: 800px;
       background: url('https://raw.githubusercontent.com/achernar-alpha-eridani/public_assets/main/azo-calendar/marks_sprites.png') -830px -10px;
+      transform: scale(.5);
     }
 
     .bg-mark3 {
       width: 800px;
       height: 800px;
       background: url('https://raw.githubusercontent.com/achernar-alpha-eridani/public_assets/main/azo-calendar/marks_sprites.png') -10px -830px;
+      transform: scale(.5);
     }
 
     .bg-mark4 {
       width: 800px;
       height: 800px;
       background: url('https://raw.githubusercontent.com/achernar-alpha-eridani/public_assets/main/azo-calendar/marks_sprites.png') -830px -830px;
+      transform: scale(.5);
     }
 
     .bg-mark5 {
       width: 800px;
       height: 800px;
       background: url('https://raw.githubusercontent.com/achernar-alpha-eridani/public_assets/main/azo-calendar/marks_sprites.png') -1650px -10px;
+      transform: scale(.5);
     }
 
     .bg-mark6 {
       width: 800px;
       height: 800px;
       background: url('https://raw.githubusercontent.com/achernar-alpha-eridani/public_assets/main/azo-calendar/marks_sprites.png') -1650px -830px;
+      transform: scale(.5);
+    }
+
+    .sprite {
+      background: url('https://raw.githubusercontent.com/achernar-alpha-eridani/public_assets/main/azo-calendar/sprite.png') no-repeat top left;
+      width: 2666px;
+      height: 2247px;
+    }
+
+    .sprite.d1 {
+      background-position: 0 0;
+    }
+
+    .sprite.d3 {
+      background-position: -2676px 0;
+    }
+
+    .sprite.d2 {
+      background-position: -5352px 0;
+    }
+
+    .sprite.d6 {
+      background-position: -8028px 0;
+    }
+
+    .sprite.d5 {
+      background-position: -10704px 0;
+    }
+
+    .sprite.d4 {
+      background-position: -13380px 0;
     }
   </style>
 </head>
 
 <body>
+  <div class='sprite d1'></div>
+  <div class='sprite d3'></div>
+  <div class='sprite d2'></div>
+  <div class='sprite d6'></div>
+  <div class='sprite d5'></div>
+  <div class='sprite d4'></div>
   <div class="container mt-3">
     <nav>
       <div class="btn-group">
@@ -190,20 +232,20 @@
           </thead>
           <tbody id="calendar-body" class="table-group-divider">
             <tr>
-              <td class="mark1">3</td>
+              <td class="bg-mark1">3</td>
               <td>4</td>
-              <td class="mark2">5</td>
+              <td class="bg-mark2">5</td>
               <td>6</td>
               <td>7</td>
               <td>8</td>
-              <td class="mark3">9</td>
+              <td class="bg-mark3">9</td>
             </tr>
             <tr>
               <td>10</td>
-              <td class="mark4">11</td>
+              <td class="bg-mark4">11</td>
               <td>12</td>
-              <td class="mark5">13</td>
-              <td class="mark6">14</td>
+              <td class="bg-mark5">13</td>
+              <td class="bg-mark6">14</td>
               <td>15</td>
               <td>16</td>
             </tr>
