@@ -40,6 +40,12 @@
       #calendar {
         background-color: #f0eee5;
       }
+
+      .last {
+        width: 100%;
+        position: absolute;
+        bottom: 0;
+      }
     }
   </style>
 </head>
@@ -47,20 +53,23 @@
 <body>
   <div class="container text-center mt-3">
     <div class="row">
-      <div id="events" class="col-md-6 col-sm-12">
+      <div id="events" class="col-md-6 col-sm-12" style="position: relative;">
         <h3 class="mt-3 mb-3">Save the dates</h3>
         <div class="row ms-3">
           No events for this month...
         </div>
-        <div class="d-block">
-          <img
-            src="https://raw.githubusercontent.com/achernar-alpha-eridani/public_assets/main/azo-calendar/AZO_logo.png"
-            width="120px" height="120px"></img>
-        </div>
-        <div id="events-bottom" class="text-center">
-          activities organized and/or supported by<br>Active Zone Outdoor
+        <div class="row last">
+          <div class="d-block text-center">
+            <img
+              src="https://raw.githubusercontent.com/achernar-alpha-eridani/public_assets/main/azo-calendar/AZO_logo.png"
+              width="120px" height="120px"></img>
+            <div id="events-bottom" class="text-center">
+              activities organized and/or supported by<br>Active Zone Outdoor
+            </div>
+          </div>
         </div>
       </div>
+
       <div id="calendar" class="col-md-6 col-sm-12">
         <h2 class="text-center mt-3 mb-3"><span id="title-month">{month}</span> <span id="title-year">{year}</span></h2>
 
@@ -123,6 +132,24 @@
             </tr>
           </thead>
           <tbody id="calendar-body" class="table-group-divider">
+            <tr>
+              <td class="draw-sprite" style="--n:4;--i:0">3</td>
+              <td>4</td>
+              <td class="draw-sprite" style="--n:4;--i:1">5</td>
+              <td>6</td>
+              <td>7</td>
+              <td>8</td>
+              <td class="draw-sprite" style="--n:4;--i:2">9</td>
+            </tr>
+            <tr>
+              <td>10</td>
+              <td class="draw-sprite" style="--n:4;--i:3">11</td>
+              <td>12</td>
+              <td class="draw-sprite" style="--n:4;--i:4">13</td>
+              <td class="draw-sprite" style="--n:4;--i:5">14</td>
+              <td>15</td>
+              <td>16</td>
+            </tr>
             <tr>
               <td class="draw-sprite" style="--n:4;--i:0">3</td>
               <td>4</td>
